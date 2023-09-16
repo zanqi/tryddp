@@ -18,6 +18,9 @@ trainer_config:
 optimizer_config:
   weight_decay: 0.1
   learning_rate: 0.0003
+generator_config:
+  prompt: "The meaning of life is"
+  top_k: 200 # sample only the top_k most likely tokens, set others to 0 probability
 
 hydra:
   run:
